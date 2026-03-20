@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Larasya | Jasa Hias Hantaran Mewah</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#775e00",
+              "background": "#fbf9f7",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "on-primary": "#ffffff",
+              "tertiary-container": "#ffda6c",
+              "tertiary": "#735c00",
+              "outline-variant": "#d2c3c1",
+              "on-secondary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#1d1b16",
+              "error-container": "#ffdad6",
+              "surface-tint": "#7c5357",
+              "primary-container": "#ffd3d6",
+              "surface-container-highest": "#e4e2e0",
+              "primary": "#7c5357",
+              "surface-container-low": "#f5f3f1",
+              "secondary-container": "#e7e2d9",
+              "tertiary-fixed-dim": "#e9c349",
+              "on-secondary-container": "#67645d",
+              "on-tertiary-fixed-variant": "#574500",
+              "on-tertiary": "#ffffff",
+              "surface-bright": "#fbf9f7",
+              "outline": "#817473",
+              "surface-container-high": "#e9e8e6",
+              "on-tertiary-fixed": "#241a00",
+              "surface-variant": "#e4e2e0",
+              "on-primary-container": "#80565a",
+              "primary-fixed-dim": "#eeb9bd",
+              "on-background": "#1b1c1b",
+              "surface-dim": "#dbdad8",
+              "on-surface": "#1b1c1b",
+              "primary-fixed": "#ffdadc",
+              "on-secondary-fixed-variant": "#494640",
+              "on-primary-fixed": "#301216",
+              "on-surface-variant": "#4f4443",
+              "on-primary-fixed-variant": "#623c40",
+              "on-error": "#ffffff",
+              "surface": "#fbf9f7",
+              "inverse-on-surface": "#f2f0ee",
+              "tertiary-fixed": "#ffe088",
+              "secondary-fixed-dim": "#cbc6bd",
+              "secondary-fixed": "#e7e2d9",
+              "inverse-surface": "#30302f",
+              "secondary": "#615e57",
+              "inverse-primary": "#eeb9bd",
+              "surface-container": "#efedec"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(251, 249, 247, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .silk-gradient {
+        background: linear-gradient(135deg, #7c5357 0%, #ffd3d6 100%);
+      }
+      .asymmetric-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md shadow-sm shadow-rose-900/5">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-serif italic text-rose-900 dark:text-rose-100" href="#">Larasya</a>
+<div class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+<a class="text-rose-900 dark:text-rose-100 border-b border-rose-900/30 pb-1" href="#">Home</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-rose-700 dark:hover:text-rose-200 transition-colors" href="#tentang-kami">Tentang Kami</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-rose-700 dark:hover:text-rose-200 transition-colors" href="#layanan">Layanan</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-rose-700 dark:hover:text-rose-200 transition-colors" href="#galeri">Galeri</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-rose-700 dark:hover:text-rose-200 transition-colors" href="#testimoni">Testimoni</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-rose-700 dark:hover:text-rose-200 transition-colors" href="#kontak">Kontak</a>
+</div>
+<button class="silk-gradient text-on-primary px-6 py-2.5 rounded-full text-sm font-medium hover:opacity-80 transition-opacity active:scale-[0.98]">
+                Pesan Sekarang
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury Wedding Gift Boxes" class="w-full h-full object-cover opacity-90" data-alt="Elegant silk wedding gift boxes with floral accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYSajaT6hQ0-pf56-Bguhnw-1hD8VfIktn3SK9esaI6kUKQ7jRMFHd9iiu7fQ0v6_UvvLdVlwbjJ9yOIKxY5K6eF7c0K-4vsA_7juF7FaCUTIdQrml1mgrvkVNayh7IwbvX_V7cUqpGTtAQ-pB1u9-tZurGi29EhaYkf5BIHVhRsAIYkVv4nXEK0ajEEhSCnVM2xz_0Ty3wbc40DMciACWLr23vViTsR45hwyhmpVUboglP-6DKxZQu7nmhusXiCvqm1UpztuU9e-N"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="container mx-auto px-6 relative z-10">
+<div class="max-w-2xl">
+<h1 class="font-headline text-5xl md:text-7xl text-on-surface leading-tight mb-6">
+                    Keindahan yang <span class="italic text-primary">Selaras</span> dalam Momen Spesial Anda
+                </h1>
+<p class="text-on-surface-variant text-lg md:text-xl mb-10 max-w-lg leading-relaxed">
+                    Dari hati, untuk momen yang tak terlupakan
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="silk-gradient text-on-primary px-8 py-4 rounded-full font-semibold shadow-lg shadow-primary/20 hover:opacity-90 transition-all">
+                        Pesan Sekarang
+                    </button>
+<button class="px-8 py-4 rounded-full font-semibold text-primary border border-primary/20 bg-surface/40 backdrop-blur-sm hover:bg-surface/80 transition-all">
+                        Lihat Katalog
+                    </button>
+</div>
+</div>
+</div>
+<!-- Decorative Floating Element -->
+<div class="absolute right-[-5%] bottom-[10%] hidden lg:block animate-pulse opacity-40">
+<div class="w-64 h-64 border border-tertiary rounded-full"></div>
+</div>
+</header>
+<!-- Tentang Kami Section -->
+<section class="py-24 bg-surface" id="tentang-kami">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Crafting Process" class="w-full h-full object-cover" data-alt="Hands delicately arranging flowers on a gift box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_5HVou-rmUk00YD0pevblnYgx0W6imbTJ7cxxlivT9Ie54WfHQMiOHX2NEgFwRA7Uj-RSkYSMRvbPdWO-IswyFdUjhy6xzx9IT9lO65i9B2pDInEImvHpZ9Om9wl8Oz5zFyFVsy5d8s5Bacpe41elLFuCb3mTm7siezo1d8F1qQHwH3j_k2Gk3JupUKdzz2b99x_xsgIyBaEb17Py-vuYw9VXeNo3JFOKPsLYr_LH-Bg4U0EhFpzVyTC7gfJJMCRlkZBco0ecoyup"/>
+</div>
+<!-- Decorative Badge -->
+<div class="absolute -bottom-8 -right-8 bg-surface-container-lowest p-8 rounded-xl shadow-xl hidden md:block border border-outline-variant/10">
+<span class="block font-serif italic text-3xl text-tertiary">10+</span>
+<span class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">Tahun Pengalaman</span>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-tertiary font-bold tracking-[0.2em] text-sm uppercase mb-4 block">Manifesto Kami</span>
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-8">Karya Tangan yang Penuh <span class="italic">Jiwa</span></h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+                        Di Larasya, we believe that every gift is a representation of respect and love. We combine premium materials like silk, velvet, and gold accents with contemporary designs.
+                    </p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-10">
+                        Setiap detail—mulai dari pemilihan kotak hingga penempatan dekorasi bunga—dikerjakan secara manual oleh pengrajin ahli kami untuk memastikan hasil yang sempurna dan personal.
+                    </p>
+<div class="grid grid-cols-2 gap-8 border-t border-outline-variant/20 pt-8">
+<div>
+<h4 class="font-bold text-primary mb-2">Desain Custom</h4>
+<p class="text-sm text-on-surface-variant">Sesuai dengan tema warna dan preferensi pribadi Anda.</p>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-2">Bahan Premium</h4>
+<p class="text-sm text-on-surface-variant">Menggunakan material terbaik untuk kesan yang agung.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Layanan Section -->
+<section class="py-24 bg-surface-container-low" id="layanan">
+<div class="container mx-auto px-6 text-center mb-16">
+<h2 class="font-headline text-4xl text-on-surface mb-4">Layanan Eksklusif Kami</h2>
+<div class="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
+<p class="text-on-surface-variant max-w-xl mx-auto">Berbagai paket hantaran yang dirancang untuk melengkapi setiap tahap perjalanan cinta Anda.</p>
+</div>
+<div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5">
+<div class="w-16 h-16 bg-primary-container/30 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">celebration</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-4">Paket Hantaran Pernikahan</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Rangkaian lengkap hantaran akad nikah dengan tema yang serasi dan elegan.</p>
+<a class="text-sm font-bold uppercase tracking-widest text-primary hover:underline underline-offset-8 transition-all" href="#">Pelajari Lebih Lanjut</a>
+</div>
+<!-- Service Card 2 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5">
+<div class="w-16 h-16 bg-tertiary-container/30 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary text-3xl">favorite</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-4">Paket Lamaran</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Hantaran pembuka yang manis dan berkesan untuk momen pengikatan janji suci.</p>
+<a class="text-sm font-bold uppercase tracking-widest text-primary hover:underline underline-offset-8 transition-all" href="#">Pelajari Lebih Lanjut</a>
+</div>
+<!-- Service Card 3 -->
+<div class="group bg-surface-container-lowest p-10 rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5">
+<div class="w-16 h-16 bg-primary-container/30 rounded-full flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">auto_awesome</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-4">Custom Hantaran</h3>
+<p class="text-on-surface-variant leading-relaxed mb-8">Bebaskan kreativitas Anda. Kami wujudkan desain hantaran impian yang unik.</p>
+<a class="text-sm font-bold uppercase tracking-widest text-primary hover:underline underline-offset-8 transition-all" href="#">Pelajari Lebih Lanjut</a>
+</div>
+</div>
+</section>
+<!-- Galeri Section -->
+<section class="py-24 bg-surface" id="galeri">
+<div class="container mx-auto px-6 mb-12 flex justify-between items-end">
+<div>
+<h2 class="font-headline text-4xl text-on-surface">Galeri Karya</h2>
+<p class="text-on-surface-variant mt-2">Inspirasi hantaran yang telah kami kurasi.</p>
+</div>
+<a class="hidden md:block text-primary font-bold border-b-2 border-primary/20 pb-1 hover:border-primary transition-all" href="#">Lihat Semua Koleksi</a>
+</div>
+<div class="container mx-auto px-6">
+<div class="asymmetric-grid">
+<div class="col-span-12 md:col-span-8 rounded-xl overflow-hidden h-[400px] relative group cursor-pointer">
+<img alt="Gifts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern minimalist gift wrapping with cream ribbon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPfU0oIYlYn_miSryLm2MVEHapVhb0_ofN9YoP93CyEqrYP5VMgarWZn-IJ4TMSUEXIeTtApXUASOyHHOQxKWroA-YPuo4TzXIbwWDlE3dxReRo8rNhclgDsvaztQuzKZ3gE_ATLZ2JDXvJwHAQ2XD3QVlr4xGDbq1gbYr8QAtKAAxOfXp8-JCfhFFR8u2axC8zjZUm_5i6-2bWLIz7e3WzI_mpLykGAH4w4Zgwi4W2mlOe9LkWdQLUpLpLMOjI-lwdMO1EM_5ex-8"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+</div>
+<div class="col-span-6 md:col-span-4 rounded-xl overflow-hidden h-[400px] relative group cursor-pointer">
+<img alt="Jewelry Box" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxury jewelry hantaran box with gold accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwqgW_N6kXvapfmWxo4Ilrf6_W_S0cZZ2UoSlL7c2-cn_5p3vzh9FmF7uBqQs9H_HJ2md5PLrkajoYDfSa2Sc7S_WHXczC27eNDvu-nQErRwNN92bn54eT8WYDGV7mKTHPqTEUWyMXMvUFFNgpLxKydjklb9dmvV3V-Avx27BjQg0aDH2jplncT9YKWFOzbrySUhgLqbO-PM_svEa_KjTtGOSbyOb4qgUC819cSc-uWFNuOHxXDOZ3vYoFQc43KdWqzPJ3Rw20ZbuY"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+</div>
+<div class="col-span-6 md:col-span-4 rounded-xl overflow-hidden h-[400px] relative group cursor-pointer">
+<img alt="Floral box" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Gift box surrounded by pastel roses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3muL7DjXx4xDJ7JR0elKQKhBTla-fBragUcGzOSiIX4IHvJwSYc0rdvfC9-lBNS1o4GYyyqN_zUMQiY1_ZRxIq19vnv6zrH0-rcyqkTDIRImDBpdVSHfKBGEGIVwEcUribe8Y6awa6s39Gu3Dz_nMICn6TMap1-9DgOWMDQah3vQyZAf9BI8m2xZyz9YbX0CjuE7ll3RfVg2Vw_eazD5m_vYWRzsWVqbz8BgsPPoSb2_51HL8kxNuyPECQ0ryL1XBydaC__U0gi_V"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+</div>
+<div class="col-span-12 md:col-span-8 rounded-xl overflow-hidden h-[400px] relative group cursor-pointer">
+<img alt="Traditional Gift" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Intricate traditional wedding hantaran arrangement" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf0R7m9GSpVAmHYS4tvPlNo1CJTLaDmOy7aHxPJM_sOEomI-JxUna49jk367Hs74rKUrch89RvAjNvpxKO9Q67sK5s-IQm5B0EXvhYRtJgHN4irao5thbY22JjMoEOH_D9SceQuIWlmsdDK87OHgBrFGkjYzdnzxYBVL5yq9V4ftiaxBjrhtpExEBsjP-Mr_RWp1ZJhnsNJ3lNdHMoo7sj1s4b6ilwHjHxVVNMsACln7ivL6GOOeZywHACbjBBlh-1xBRBkOsTK-No"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimoni Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden" id="testimoni">
+<div class="container mx-auto px-6">
+<h2 class="font-headline text-4xl text-center text-on-surface mb-16 italic">Cerita Kebahagiaan</h2>
+<div class="flex space-x-8 overflow-x-auto no-scrollbar pb-12 px-4 snap-x">
+<!-- Testimonial 1 -->
+<div class="min-w-[320px] md:min-w-[450px] snap-center bg-surface-container-lowest p-12 rounded-2xl shadow-sm border border-outline-variant/5">
+<div class="flex text-tertiary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant text-lg italic leading-relaxed mb-8">
+                        "Pelayanan yang sangat profesional. Hantaran saya terlihat sangat mewah dan jadi pusat perhatian saat acara lamaran kemarin. Terima kasih Larasya!"
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center font-bold text-primary">SA</div>
+<div>
+<h5 class="font-bold text-on-surface">Saraswati Amira</h5>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">
+                        "Pelayanan yang sangat profesional. Hantaran saya terlihat sangat mewah dan jadi pusat perhatian saat acara lamaran kemarin. Terima kasih Larasya!"
+                    </p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="min-w-[320px] md:min-w-[450px] snap-center bg-surface-container-lowest p-12 rounded-2xl shadow-sm border border-outline-variant/5">
+<div class="flex text-tertiary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant text-lg italic leading-relaxed mb-8">
+                        "Detailnya luar biasa. Pilihan bunganya segar dan sangat premium. Benar-benar sesuai dengan konsep pernikahan modern yang saya inginkan."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center font-bold text-primary">DN</div>
+<div>
+<h5 class="font-bold text-on-surface">Dinda Nindya</h5>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Lamaran Bandung, 2024</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="min-w-[320px] md:min-w-[450px] snap-center bg-surface-container-lowest p-12 rounded-2xl shadow-sm border border-outline-variant/5">
+<div class="flex text-tertiary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant text-lg italic leading-relaxed mb-8">
+                        "Tidak menyangka hasilnya akan seindah ini. Komunikasi tim sangat baik dan membantu saya menentukan pilihan terbaik untuk seserahan."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center font-bold text-primary">RK</div>
+<div>
+<h5 class="font-bold text-on-surface">Rizky Kurniawan</h5>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Akad Nikah Bogor, 2023</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Kontak Section -->
+<section class="py-24 bg-surface relative overflow-hidden" id="kontak">
+<!-- Abstract Background Decorative Elements -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-tertiary/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+<div class="container mx-auto px-6 relative z-10">
+<div class="max-w-5xl mx-auto bg-surface-container-lowest rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+<!-- Contact Info Side -->
+<div class="w-full md:w-5/12 silk-gradient p-12 text-on-primary">
+<h2 class="font-headline text-3xl mb-8">Hubungi Kami</h2>
+<p class="opacity-90 mb-12">Konsultasikan kebutuhan hantaran Anda dengan tim desainer kami sekarang.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">mail</span>
+<span>hello@heirloomcurated.id</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined">location_on</span>
+<span>Kebayoran Baru, Jakarta Selatan</span>
+</div>
+</div>
+<div class="mt-16 pt-12 border-t border-white/20">
+<h4 class="text-xs uppercase tracking-widest font-bold mb-6">Social Media</h4>
+<div class="flex gap-4">
+<a class="w-12 h-12 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">link</span>
+</a>
+<a class="w-12 h-12 rounded-full border border-white/40 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Form Side -->
+<div class="w-full md:w-7/12 p-12">
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Nama Lengkap</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="Masukkan nama Anda" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Pesan</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="Ceritakan kebutuhan hantaran Anda..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold shadow-lg shadow-primary/20 hover:bg-primary-fixed-dim transition-all" type="submit">Kirim Pesan</button>
+</form>
+<div class="mt-10 pt-10 border-t border-outline-variant/10 flex flex-col md:flex-row gap-4">
+<a class="flex-1 flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 rounded-xl font-bold hover:opacity-90 transition-all" href="#">
+                            WhatsApp
+                        </a>
+<a class="flex-1 flex items-center justify-center gap-3 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white py-4 rounded-xl font-bold hover:opacity-90 transition-all" href="#">
+                            Instagram
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-zinc-50 dark:bg-zinc-900">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-8 py-20 max-w-7xl mx-auto text-center md:text-left">
+<div class="space-y-6">
+<a class="text-xl font-serif text-rose-900 dark:text-rose-100" href="#">Larasya</a>
+<p class="text-sm text-zinc-500 dark:text-zinc-400 max-w-xs leading-relaxed">
+                    Menghadirkan keindahan dalam setiap detail hantaran pernikahan Anda dengan sentuhan eksklusif dan personal.
+                </p>
+</div>
+<div class="space-y-6">
+<h4 class="text-rose-900 dark:text-rose-100 font-semibold uppercase text-xs tracking-widest">Menu</h4>
+<ul class="space-y-3">
+<li><a class="text-zinc-500 dark:text-zinc-400 hover:underline decoration-rose-200 underline-offset-4 transition-all" href="#">Home</a></li>
+<li><a class="text-zinc-500 dark:text-zinc-400 hover:underline decoration-rose-200 underline-offset-4 transition-all" href="#tentang-kami">Tentang Kami</a></li>
+<li><a class="text-zinc-500 dark:text-zinc-400 hover:underline decoration-rose-200 underline-offset-4 transition-all" href="#layanan">Layanan</a></li>
+<li><a class="text-zinc-500 dark:text-zinc-400 hover:underline decoration-rose-200 underline-offset-4 transition-all" href="#galeri">Galeri</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-rose-900 dark:text-rose-100 font-semibold uppercase text-xs tracking-widest">Ikuti Kami</h4>
+<div class="flex justify-center md:justify-start gap-4">
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-rose-900 transition-colors" href="#">Instagram</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-rose-900 transition-colors" href="#">WhatsApp</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-rose-900 transition-colors" href="#">Email</a>
+<a class="text-zinc-500 dark:text-zinc-400 hover:text-rose-900 transition-colors" href="#">Address</a>
+</div>
+<div class="pt-8">
+<p class="text-xs tracking-tighter text-zinc-500 dark:text-zinc-400">© 2024 Larasya. All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
